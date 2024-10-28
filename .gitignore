@@ -1,0 +1,3 @@
+bitcoin-explorer-ingestion/target
+bitcoin-explorer-frontend/node_modules
+bitcoin-explorer-frontend/package-lock.json
