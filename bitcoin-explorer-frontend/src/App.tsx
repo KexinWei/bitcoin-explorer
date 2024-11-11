@@ -7,6 +7,8 @@ import {
   CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend,
 } from 'chart.js';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001';
+
 ChartJS.register(
   CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend
 );
@@ -43,9 +45,9 @@ const App: React.FC = () => {
     const fetchData = async () => {
       try {
         const [blockResponse, marketResponse, networkResponse] = await Promise.all([
-          axios.get('http://localhost:3001/latest-block'),
-          axios.get('http://localhost:3001/market-data'),
-          axios.get('http://localhost:3001/network-data'),
+          axios.get(`${API_URL}/latest-block`),
+          axios.get(`${API_URL}/market-data`),
+          axios.get(`${API_URL}/network-data`),
         ]);
 
         setLatestBlock(blockResponse.data);

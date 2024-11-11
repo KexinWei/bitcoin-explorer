@@ -165,7 +165,7 @@ The `docker-compose.yml` file orchestrates the services:
 ## Notes
 
 - The first time you run the application, the backend service will fetch historical data, which may take some time. Please be patient while the data is being populated.
-- Ensure that the ports `80`, `3001`, and `5432` are not occupied by other services on your machine.
+- Ensure that the ports `8080`, `3001`, and `5432` are not occupied by other services on your machine.
 
 ## Troubleshooting
 
