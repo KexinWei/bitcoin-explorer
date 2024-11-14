@@ -202,7 +202,7 @@ const App: React.FC = () => {
             </div>
             <div className="right-side">
               <div className="data-box">
-                <h2>Current Bitcoin Price</h2>
+                <h2>Bitcoin Price</h2>
                 <p className="price">${bitcoinPrice?.toLocaleString()}</p>
               </div>
               <div className="chart-container">
